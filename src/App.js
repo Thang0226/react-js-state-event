@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import {Component} from "react";
 import Hello from "./Hello";
@@ -25,7 +24,7 @@ class App extends Component {
     this.setState({display: false});
   }
 
-  componentDidMount() {       // function without binding is auto-called after loading page
+  componentDidMount() {
     setTimeout(() => {
       this.setState({color: "pink"});
     }, 5000)
